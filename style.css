@@ -992,7 +992,8 @@
         }
 
         .carte-vignette {
-            flex: 1 1 100%;
+            flex: none;
+            width: 100%;
         }
 
         /* Shorts : 1 par colonne */
