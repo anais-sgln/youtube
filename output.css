@@ -1035,6 +1035,9 @@
     h1 {
       font-size: 2rem;
     }
+    .logo-inline {
+      height: 4rem;
+    }
     nav {
       padding: 0.6rem 1rem;
     }
