@@ -890,4 +890,124 @@
         top: 0;
     }
 
+    /* ── RESPONSIVE : Tablet (≤ 900px) ── */
+    @media (max-width: 900px) {
+        h1 {
+            font-size: 3.5rem;
+        }
+
+        .vedette-titre {
+            font-size: 1.65rem;
+        }
+
+        .footer-inner {
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+        }
+
+        .rangee-vignettes {
+            flex-wrap: wrap;
+            padding: 1.5rem 1rem;
+        }
+
+        .carte-vignette {
+            flex: 1 1 calc(50% - 0.5rem);
+        }
+    }
+
+    /* ── RESPONSIVE : Mobile (≤ 640px) ── */
+    @media (max-width: 640px) {
+
+        h1 {
+            font-size: 2rem;
+        }
+
+        nav {
+            padding: 0.6rem 1rem;
+        }
+
+        nav ul {
+            justify-content: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .entete {
+            padding: 1.25rem 1rem;
+        }
+
+        .hero-headline {
+            font-size: 1.7rem;
+            max-width: 100%;
+        }
+
+        .hero p {
+            font-size: 0.9rem;
+            max-width: 100%;
+        }
+
+        /* background-attachment:fixed ne fonctionne pas sur iOS */
+        .plan-bg {
+            background-attachment: scroll;
+        }
+
+        /* Section vedette : empilement vertical */
+        .section-vedette {
+            padding: 1.5rem 0.75rem;
+        }
+
+        .vedette-contenu {
+            grid-template-columns: 1fr;
+        }
+
+        .vedette-image {
+            border-right: none;
+            border-bottom: 4px solid #F13B2E;
+        }
+
+        .about-image-right {
+            border-left: none;
+            border-bottom: none;
+            border-top: 4px solid #F13B2E;
+        }
+
+        .vedette-titre {
+            font-size: 1.5rem;
+        }
+
+        /* À propos : empilement vertical */
+        .about-team-section {
+            padding: 1.5rem 0.75rem;
+        }
+
+        .about-team-inner {
+            grid-template-columns: 1fr;
+        }
+
+        /* Vignettes : 2 par ligne */
+        .rangee-vignettes {
+            flex-wrap: wrap;
+            padding: 1.5rem 0.5rem;
+            gap: 0.75rem;
+        }
+
+        .carte-vignette {
+            flex: 1 1 calc(50% - 0.4rem);
+        }
+
+        /* Footer : 1 colonne */
+        .footer-inner {
+            grid-template-columns: 1fr;
+            gap: 2rem;
+            padding: 2rem 1.5rem;
+        }
+
+        /* Avis : cartes un peu plus étroites */
+        .carte, .carte_sombre {
+            width: 260px;
+            min-height: 150px;
+            padding: 1.2rem 1.3rem;
+        }
+    }
+
 }
