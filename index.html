@@ -117,18 +117,18 @@
                     <h2 class="vedette-titre">Ceux qui fouillent le passé pour vous</h2>
                     <div class="vedette-trait"></div>
                     <ul class="team-list">
-                        <li><span class="team-name">Onya Joseph</span><span class="team-role">Contenu & Recherche</span></li>
-                        <li><span class="team-name">Malet Yoann</span><span class="team-role">Montage & Réalisation</span></li>
-                        <li><span class="team-name">Seck N'boumbé</span><span class="team-role">Marketing</span></li>
-                        <li><span class="team-name">Marvillet Lucas</span><span class="team-role">Direction Artistique</span></li>
-                        <li><span class="team-name">Bonnin Thomas</span><span class="team-role">Script & Narration</span></li>
-                        <li><span class="team-name">Marchel Aurélie</span><span class="team-role">Réseaux Sociaux</span></li>
-                        <li><span class="team-name">Anais Seghilani</span><span class="team-role">Développement Web</span></li>
+                        <li class="team-item" data-member="joseph"><span class="team-name">Onya Joseph</span><span class="team-role">Youtubeur & Monteur</span></li>
+                        <li class="team-item" data-member="yoan"><span class="team-name">Malet Yoann</span><span class="team-role">DA & Ingé Son</span></li>
+                        <li class="team-item" data-member="nbombe"><span class="team-name">Seck N'boumbé</span><span class="team-role">Stratégie Marketing</span></li>
+                        <li class="team-item" data-member="lucas"><span class="team-name">Marvillet Lucas</span><span class="team-role">Monteur Cadreur</span></li>
+                        <li class="team-item" data-member="thomas"><span class="team-name">Bonnin Thomas</span><span class="team-role">Stratégie Marketing</span></li>
+                        <li class="team-item" data-member="aurelie"><span class="team-name">Marchel Aurélie</span><span class="team-role">Supervision Générale</span></li>
+                        <li class="team-item" data-member="anais"><span class="team-name">Anais Seghilani</span><span class="team-role">Développement Web</span></li>
                     </ul>
                 </div>
 
                 <div class="vedette-image about-image-right">
-                    <img src="hero1.png" alt="L'équipe Archive Point Zip">
+                    <img src="joseph.webp" alt="L'équipe Archive Point Zip">
                     <p class="vedette-legende">© Archive Point Zip — La rédaction</p>
                 </div>
 
@@ -346,6 +346,23 @@
             <span>Développé par Anais Seghilani</span>
         </div>
     </footer>
+
+    <!-- Modale équipe -->
+    <div id="team-modal" class="team-modal-overlay" role="dialog" aria-modal="true" aria-label="Profil du membre" hidden>
+        <div class="team-modal-card">
+            <button class="team-modal-close" aria-label="Fermer">×</button>
+            <div class="team-modal-header">
+                <span class="team-modal-avatar" id="modal-avatar"></span>
+                <div>
+                    <p class="team-modal-name" id="modal-name"></p>
+                    <span class="team-modal-role" id="modal-role"></span>
+                </div>
+            </div>
+            <div class="team-modal-trait"></div>
+            <p class="team-modal-bio" id="modal-bio"></p>
+            <div class="team-modal-tags" id="modal-tags"></div>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>
