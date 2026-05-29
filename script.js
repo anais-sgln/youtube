@@ -4,6 +4,19 @@ document.querySelector('.hero button').addEventListener('click', function () {
     this.classList.toggle('clicked');
 });
 
+/* Bouclage sans coupure : on revient à 0 avant que le navigateur atteigne la fin */
+const heroVideo = document.querySelector('.hero-video');
+if (heroVideo) {
+    heroVideo.removeAttribute('loop');
+    heroVideo.addEventListener('timeupdate', function () {
+        if (this.duration && this.currentTime >= this.duration - 0.15) {
+            this.currentTime = 0;
+            this.play();
+        }
+    });
+}
+
+
 /* ── MODALE ÉQUIPE ── */
 const MEMBERS = {
     joseph:  { initials: 'OJ', name: 'Onya Joseph',    role: 'Youtubeur & Monteur',    bio: 'La voix et le visage de la chaîne. Il scénarise, tourne et monte les dossiers de fond.',          tags: ['Script', 'Tournage', 'Montage'] },

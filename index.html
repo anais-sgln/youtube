@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="referrer" content="strict-origin-when-cross-origin">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline' https://use.typekit.net; font-src 'self' https://use.typekit.net https://p.typekit.net; img-src 'self' data:; script-src 'self'; object-src 'none'; frame-src 'none'">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline' https://use.typekit.net; font-src 'self' https://use.typekit.net https://p.typekit.net; img-src 'self' data: https://i.ytimg.com; script-src 'self'; object-src 'none'; frame-src 'none'">
     <title>Archive Point Zip</title>
     <link rel="stylesheet" href="https://use.typekit.net/XXXXXXX.css">
     <link rel="stylesheet" href="output.css">
@@ -46,9 +46,13 @@
     <main id="main-content">
 
     <section class="hero">
-<h2 class="hero-headline">Quand l'histoire réelle devient le décor de vos jeux préférés</h2>
-        <p>Tchernobyl, la Guerre Froide, Hiroshima... des faits vrais qui ont façonné des mondes fictifs.</p>
-        <button type="button">Voir la vidéo</button>
+        <video class="hero-video" src="video.mp4" autoplay muted loop playsinline></video>
+<div class="hero-content">
+            <h2 class="hero-headline">Nous fouillons</h2>
+            <div class="hero-trait"></div>
+            <p class="hero-subtitle">Quand l'histoire réelle devient le décor de vos jeux préférés</p>
+            <button type="button">Voir la vidéo</button>
+        </div>
     </section>
 
     <div class="bandeau">
@@ -78,7 +82,7 @@
             <div class="vedette-contenu">
 
                 <div class="vedette-image">
-                    <img src="hero1.png" alt="Archive Point Zip — Dossier comparatif">
+                    <img src="image1.png" alt="Archive Point Zip — Dossier comparatif">
                     <p class="vedette-legende">© Archive Point Zip — Dossier comparatif</p>
                 </div>
 
@@ -145,14 +149,23 @@
         <h2 id="shorts-titre">Derniers Shorts</h2>
 
         <div class="video-container">
-            <a href="https://www.youtube.com/shorts/(a remplir)" class="video-card" aria-label="Voir le Short YouTube 1" target="_blank" rel="noopener noreferrer">
-                <div class="miniature"></div>
+            <a href="https://www.youtube.com/shorts/a7l9pbjb8wc" class="video-card" aria-label="Voir le Short YouTube 1" target="_blank" rel="noopener noreferrer">
+                <div class="short-wrap">
+                    <img class="miniature" src="joe.jpeg" alt="Joseph - Archive Point Zip" loading="lazy">
+                    <div class="short-play"><div class="short-play-btn"></div></div>
+                </div>
             </a>
-            <a href="https://www.youtube.com/shorts/(a remplir)" class="video-card" aria-label="Voir le Short YouTube 2" target="_blank" rel="noopener noreferrer">
-                <div class="miniature"></div>
+            <a href="https://www.youtube.com/shorts/a7l9pbjb8wc" class="video-card" aria-label="Voir le Short YouTube 2" target="_blank" rel="noopener noreferrer">
+                <div class="short-wrap">
+                    <img class="miniature" src="short.jpeg" alt="Short YouTube Archive Point Zip" loading="lazy">
+                    <div class="short-play"><div class="short-play-btn"></div></div>
+                </div>
             </a>
-            <a href="https://www.youtube.com/shorts/zxy987mnop1" class="video-card" aria-label="Voir le Short YouTube 3" target="_blank" rel="noopener noreferrer">
-                <div class="miniature"></div>
+            <a href="https://www.youtube.com/shorts/a7l9pbjb8wc" class="video-card" aria-label="Voir le Short YouTube 3" target="_blank" rel="noopener noreferrer">
+                <div class="short-wrap">
+                    <img class="miniature" src="joe.jpeg" alt="Joseph - Archive Point Zip" loading="lazy">
+                    <div class="short-play"><div class="short-play-btn"></div></div>
+                </div>
             </a>
         </div>
 
