@@ -1,8 +1,11 @@
 "use strict";
 
-document.querySelector('.hero button').addEventListener('click', function () {
-    this.classList.toggle('clicked');
-});
+const heroBtn = document.querySelector('.hero-btn');
+if (heroBtn) {
+    heroBtn.addEventListener('click', function () {
+        this.classList.toggle('clicked');
+    });
+}
 
 /* Bouclage sans coupure : on revient à 0 avant que le navigateur atteigne la fin */
 const heroVideo = document.querySelector('.hero-video');

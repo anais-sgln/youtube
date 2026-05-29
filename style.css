@@ -422,7 +422,8 @@
         color: #1a1a1a;
     }
 
-    button {
+    button,
+    a.hero-btn {
         @apply mt-8 px-9 py-4 text-lg
                cursor-pointer transition duration-300;
         font-family: 'obviously', sans-serif;
@@ -432,11 +433,15 @@
         background: transparent;
         color: white;
         border: 2px solid white;
+        display: inline-block;
+        text-decoration: none;
     }
 
     button:hover,
     button:active,
-    button.clicked {
+    button.clicked,
+    a.hero-btn:hover,
+    a.hero-btn:active {
         background: #F13B2E;
         border-color: #F13B2E;
         color: white;
@@ -504,7 +509,7 @@
     .plan-bg {
         background-image:
             linear-gradient(rgba(240, 228, 194, 0.45), rgba(240, 228, 194, 0.45)),
-            url('plan.png');
+            url('assets/plan.png');
         background-size: cover;
         background-position: center;
         background-attachment: fixed;
@@ -853,7 +858,7 @@
         background-color: #f0e4c2;
         background-image:
             linear-gradient(rgba(240, 228, 194, 0.88), rgba(240, 228, 194, 0.88)),
-            url('plan.png');
+            url('assets/plan.png');
         background-size: cover;
         background-position: bottom;
         color: #1a1a1a;
